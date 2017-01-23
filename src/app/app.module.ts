@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {JsonSchemaFormModule} from "angular2-json-schema-form";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    JsonSchemaFormModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
